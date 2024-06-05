@@ -3,13 +3,12 @@ import Friend from './Friend';
 
 function FriendsList({ initialFriends }) {
   return (
-    <ul>
-      {initialFriends.map((friend) => (
-          <li>
-            <Friend friend={friend} /> 
-          </li>
-      ))}
-    </ul>
+       <ul>
+        {initialFriends.map((friend) => (
+          <Friend friend={friend} key={friend.id}/> 
+        ))}
+      </ul>
+   
   );
 }
 

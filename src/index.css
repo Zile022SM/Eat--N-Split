@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 :root {
   --color-lightest: #fff4e6;
@@ -28,6 +26,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .app {
   min-height: 66vh;
@@ -125,10 +128,13 @@ form {
   grid-template-columns: 1fr 1.5fr;
   margin-bottom: 1.6rem;
   padding: 1.2rem;
+  background-color: #f7cea3;
+  padding: 20px;
 }
 .form-split-bill {
   grid-template-columns: 1fr 12rem;
   padding: 3.2rem 4rem;
+  background-color: #fad5ae;
 }
 
 label {
@@ -137,7 +143,7 @@ label {
 
 label::first-letter {
   display: inline-block;
-  margin-right: 4px;
+
   font-size: 1.8rem;
 }
 
